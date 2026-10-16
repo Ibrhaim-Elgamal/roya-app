@@ -158,8 +158,8 @@ input[type=date],input[type=month]{min-width:0;max-width:100%;-webkit-appearance
 <div id="splash">
   <div class="sp-ring r3"></div><div class="sp-ring r2"></div><div class="sp-ring r1"></div>
   <div class="sp-logo"></div>
-  <div class="sp-sub">متجر رويا للملابس</div>
-  <div class="sp-skip">اضغط للتخطي</div>
+  <div class="sp-sub">تم إنشاء التطبيق بواسطة المهندس إبراهيم الجمل</div>
+  <div class="sp-skip">Quintlab - Eng.Ibrahim Elgamal</div>
 </div>
 <div id="app"><div id="view"></div><nav id="nav"></nav></div>
 <div id="scan">
@@ -1665,7 +1665,7 @@ const addDays=(s,n)=>{const d=new Date(s+'T00:00:00');d.setDate(d.getDate()+n);r
 const dAr=s=>{if(!s)return '—';const [y,m,d]=s.split('-');return `${d}/${m}/${y}`;};
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
 const initial=n=>(String(n||'?').trim()[0]||'?');
-window.STORE_NAME=()=>db.settings.store||'متجر رويا للملابس';
+window.STORE_NAME=()=>db.settings.store||'متجر رويا';
 window.STAMP=()=>dAr(today())+'  '+hhmm();
 const cust=id=>db.customers.find(c=>c.id===id);
 const item=id=>db.items.find(i=>i.id===id);
