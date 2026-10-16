@@ -158,7 +158,7 @@ input[type=date],input[type=month]{min-width:0;max-width:100%;-webkit-appearance
 <div id="splash">
   <div class="sp-ring r3"></div><div class="sp-ring r2"></div><div class="sp-ring r1"></div>
   <div class="sp-logo"></div>
-  <div class="sp-sub">تم إنشاء التطبيق بواسطة المهندس إبراهيم الجمل</div>
+  <div class="sp-sub">بواسطة المهندس إبراهيم الجمل</div>
   <div class="sp-skip">Quintlab - Eng.Ibrahim Elgamal</div>
 </div>
 <div id="app"><div id="view"></div><nav id="nav"></nav></div>
@@ -1645,7 +1645,7 @@ class Pdf{
 <script>'use strict';
 /* ===================== ROYA — إدارة متجر رويا للملابس ===================== */
 const LS_KEY='roya_db_v1', CUR='ج.م';
-const blankDB=()=>({settings:{store:'متجر رويا للملابس',notify:false,lastNotify:''},items:[],customers:[],invoices:[],payments:[],ledger:[],seq:{item:0,cust:0,inv:0}});
+const blankDB=()=>({settings:{store:'متجر رويا',notify:false,lastNotify:''},items:[],customers:[],invoices:[],payments:[],ledger:[],seq:{item:0,cust:0,inv:0}});
 let MEM=null;
 function loadDB(){ try{const r=localStorage.getItem(LS_KEY); if(r){const d=JSON.parse(r); return Object.assign(blankDB(),d,{settings:Object.assign(blankDB().settings,d.settings||{}),seq:Object.assign(blankDB().seq,d.seq||{})});}}catch(e){} return MEM||blankDB(); }
 let db=loadDB();
